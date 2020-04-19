@@ -345,6 +345,7 @@ body {
 
     .about_me_text_container_text {
         font-size: 20px;
+        line-height: 30px;
         padding-top: 15px;
         padding-bottom: 15px;
     }
@@ -408,7 +409,8 @@ body {
     }
 
     .contact_me_text_container {
-        display: flex;
+        padding-left: 10px;
+        padding-right: 10px;
         flex-direction: column;
         flex: 1;
         height: 50vh;
@@ -418,13 +420,13 @@ body {
     }
 
     .contact_me_text_container a {
-        font-size: 18px;
+        font-size: 16px;
         line-height: unset;
     }
 
     .iconify {
-        font-size: 30px !important;
-        margin-right: 20px !important;
+        font-size: 24px !important;
+        margin-right: 15px !important;
     }
 
 }
