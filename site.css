@@ -7,13 +7,35 @@ a {
     all: unset;
 }
 
-.header {
-    width: 100vw;
+a:hover {
+    cursor: pointer;
+}
+
+html {
+    height: 100vh;
+    overflow: hidden
+}
+body {
+    margin: 0;
+    padding: 0;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
     height: 100vh;
 }
 
+.header {
+    width: 100vw;
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+.header_fix {
+    width: 100vw;
+    height: 50px;
+}
+
 .header_container {
-    margin: 50px 50px 0px 50px;
+    margin: 0px 50px 0px 50px;
     height: 700px;
     background: #FACFAD;
     display: flex;
@@ -38,15 +60,7 @@ a {
     line-height: 62px;
 }
 
-.header_continue {
-    width: 60px;
-    height: 26px;
-    background: #FACFAD;
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    margin: 0 auto;
-}
+
 
 /* About me */
 /* __________________ */
@@ -55,6 +69,7 @@ a {
     height: 100vh;
     display: flex;
     flex-direction: row-reverse;
+    scroll-snap-align: start;
 }
 
 .about_me_wrapper {
@@ -119,6 +134,7 @@ a {
     height: 100vh;
     display: flex;
     flex-direction: row-reverse;
+    scroll-snap-align: start;
 }
 
 .contact_me_wrapper {
@@ -187,6 +203,7 @@ a {
     flex-direction: row;
     width: 100vw;
     height: 100vh;
+    scroll-snap-align: start;
 }
 
 .portfolio_title {
@@ -216,12 +233,19 @@ a {
     align-items: center;
 }
 
+.portfolio_item {
+     min-width: 300px;
+     max-width: 300px;
+     min-height: 220px;
+     max-height: 220px;
+}
+
 .portfolio_item img {
-    min-width: 300px;
-    max-width: 300px;
-    min-height: 220px;
+    min-width: 220px;
+    max-width: 220px;
+    min-height: 140px;
+    max-height: 140px;
     object-fit: contain;
-    max-height: 220px;
 }
 
 .portfolio_item p {
