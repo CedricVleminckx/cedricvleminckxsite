@@ -23,6 +23,8 @@ body {
     height: 100vh;
 }
 
+/* Header */
+/* __________________ */
 .header {
     width: 100vw;
     height: 100vh;
@@ -234,10 +236,10 @@ body {
 }
 
 .portfolio_item {
-     min-width: 300px;
-     max-width: 300px;
-     min-height: 220px;
-     max-height: 220px;
+    min-width: 300px;
+    max-width: 300px;
+    min-height: 220px;
+    max-height: 220px;
 }
 
 .portfolio_item img {
@@ -254,4 +256,175 @@ body {
     font-weight: normal;
     font-size: 36px;
     line-height: 47px;
+}
+
+/* Smartphone */
+/* ______________________ */
+@media only screen and (max-width: 600px) {
+    html {
+        height: 0;
+        overflow: auto;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        scroll-snap-type: none;
+        overflow-y: auto;
+        height: auto;
+    }
+
+    .header {
+        width: 100vw;
+        height: 20vh;
+        margin-bottom: 20px;
+    }
+
+    .header_fix {
+        width: 0;
+        height: 0;
+    }
+
+    .header_container {
+        margin: 20px 20px 0px 20px;
+        height: 20vh;
+        background: #FACFAD;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header_name {
+        font-family: 'PT Sans Caption', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .header_subtitle {
+        font-family: PT Sans Caption;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    /* About me */
+    /* __________________ */
+    .about_me {
+        all: unset;
+        width: 100vw;
+        height: auto;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .about_me_wrapper {
+        all: unset;
+        width: 100vw;
+        height: auto;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .about_me_photo_container {
+        margin: 20px 20px 0px 20px;
+    }
+
+    #profile_photo {
+        width: 150px;
+        height: 150px;
+        padding: 10px 0px;
+    }
+
+    .about_me_text_container {
+        margin: 0px 20px 0px 20px;
+    }
+
+    .about_me_text_container_text {
+        font-size: 20px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .portfolio {
+        all: unset;
+        width: 100vw;
+        height: auto;
+    }
+
+    .portfolio_title {
+        margin: 20px 20px 0px 20px;
+        height: 15vh;
+        justify-content: center;
+    }
+
+    .portfolio_title p{
+        transform: rotate(0deg);
+        font-size: 50px;
+        line-height: unset;
+        align-self: center;
+    }
+
+    .portfolio_items {
+        margin: 0px 20px 20px 20px;
+        justify-content: space-around;
+    }
+
+    .portfolio_item {
+        min-width: 45%;
+        max-width: 45%;
+        min-height: 220px;
+        max-height: 220px;
+    }
+
+    .portfolio_item img {
+        margin-top: 10px;
+        min-width: 80%;
+        max-width: 80%;
+        min-height: 170px;
+        max-height: 170px;
+        object-fit: contain;
+    }
+
+    .portfolio_item p {
+        font-size: 20px;
+        line-height: 47px;
+    }
+
+    .contact_me {
+        all: unset;
+        width: 100vw;
+        height: auto;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .contact_me_title {
+        height: auto;
+        padding: 20px 0px;
+    }
+
+    .contact_me_text_container {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        height: 50vh;
+        background: #FCF6E5;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .contact_me_text_container a {
+        font-size: 18px;
+        line-height: unset;
+    }
+
+    .iconify {
+        font-size: 30px !important;
+        margin-right: 20px !important;
+    }
+
 }
