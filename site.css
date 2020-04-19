@@ -206,6 +206,17 @@ body {
     width: 100vw;
     height: 100vh;
     scroll-snap-align: start;
+    position: relative;
+}
+
+.portfolio_info {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-family: PT Sans Caption;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
 }
 
 .portfolio_title {
@@ -354,6 +365,15 @@ body {
         all: unset;
         width: 100vw;
         height: auto;
+    }
+
+    .portfolio_info{
+        position: unset;
+        align-self: center;
+    }
+
+    .portfolio_info p{
+        text-align: center;
     }
 
     .portfolio_title {
